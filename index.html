@@ -2,7 +2,8 @@
 	<head>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<title>Home | Quality Entertainment</title>
-		<link rel="stylesheet" type="text/css" href="css/clippy.css" media="all">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css" media="all">
 		<style type="text/css">
 			/* The sidebar menu */
 			.sidenav {
@@ -46,9 +47,9 @@
 			}
 		
 		</style>
-		
+		<script src="https://s3.amazonaws.com/clippy.js/Agents/Rover/agent.js" async="async" type="text/javascript"></script>
 	</head>
-	<body bgcolor="black" onload="agent.show();">
+	<body bgcolor="black">
 	<!-- Side navigation -->
 		<div class="sidenav">
 			<a href="#">Home</a>
@@ -64,7 +65,7 @@
 			<marquee bgcolor="#000C51" width="100%" direction="right" height="100px" scrollamount="50"><h1 style="color:yellow;padding: 0px 10px;"><i>Quality Entertainment</i></h1></marquee>
 			<i><h2 id="1">Welcome In Our Web-Site !</h2></i>
 		<br />
-		<center><img style="background:url(img/3697567056_45ae16f677_o.gif);" src="img/aapencildance.gif" /><br /><img src="img/huh.gif" width="24px"/><span style="font-size:24px;font-weight:bold;color:red;">WHAT IS QUALITY ENTERTAINMENT?</span><img src="img/huh.gif" width="24px"/>
+		<center><img style="background:url(img/3697567056_45ae16f677_o.gif);" src="img/aapencildance.gif" onclick="clippy.load('Rover', function(agent) {agent.show();});"/><br /><img src="img/huh.gif" width="24px"/><span style="font-size:24px;font-weight:bold;color:red;">WHAT IS QUALITY ENTERTAINMENT?</span><img src="img/huh.gif" width="24px"/>
 		<p>Quality Entertainment is a Revolutionary new Content Broadcasting Network. HERE! I'LL SHOW YOU!</p><br />
 		<a href="https://www.youtube.com/channel/UCINIqlVG5ZAfrXMLhxOMxWA"><img src="img/QEYT.png" width="740" height="530" /></a><br />
 		<h3>Click on the picture to go to the Web-Page :-)</h3>
@@ -77,13 +78,15 @@
 		
 		
 		<br /><span style="font-family:Comic Sans MS, cursive, serif;color:#000;font-weight:bolder;">web design is my passion</span></center>
-		<script src="css/jquery.min.js"></script>
-		<script src="css/clippy.min.js"></script>
+		
+	</div>
+	<script src="https://quality-entertainment.github.io/qa-website/css/jquery.min.js"></script>
+		<script src="https://quality-entertainment.github.io/qa-website/css/clippy.min.js"></script>
 		<script type="text/javascript">
 			clippy.load('Rover', function(agent) {
-			// Do anything with the loaded agent
 			agent.show();
+			agent.speak('Welcome to Quality Entertainment.');
 			});
 		</script>
-	</div></body>
+	</body>
 </html>
