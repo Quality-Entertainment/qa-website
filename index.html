@@ -2,6 +2,7 @@
 	<head>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<title>Home | Quality Entertainment</title>
+		<link rel="stylesheet" type="text/css" href="css/clippy.css" media="all">
 		<style type="text/css">
 			/* The sidebar menu */
 			.sidenav {
@@ -36,16 +37,23 @@
 				margin-left: 160px; /* Same as the width of the sidebar */
 				padding: 0px 10px;
 			}
-			.html, body	{
+			.html, body, h2	{
 				cursor: url('img/harrow.cur'), default;
+				color:yellow;
+			}
+			html {
+				scroll-behavior: smooth;
 			}
 		
 		</style>
+		
 	</head>
-	<body bgcolor="black">
+	<body bgcolor="black" onload="agent.show();">
 	<!-- Side navigation -->
 		<div class="sidenav">
-			<a href="#">About</a>
+			<a href="#">Home</a>
+			<a href="#1" style="font-size:14px;"><strong>▶ </strong>Welcome</a>
+			<a href="#2" style="font-size:14px;"><strong>▶ </strong>Affiliates</a>
 			<a href="#">Services</a>
 			<a href="#">Clients</a>
 			<a href="#">Contact</a>
@@ -54,11 +62,28 @@
 <!-- Page content -->
 		<div class="main">
 			<marquee bgcolor="#000C51" width="100%" direction="right" height="100px" scrollamount="50"><h1 style="color:yellow;padding: 0px 10px;"><i>Quality Entertainment</i></h1></marquee>
-			<i><h2 style="color:yellow">Welcome In Our Web-Site !</h2></i>
+			<i><h2 id="1">Welcome In Our Web-Site !</h2></i>
 		<br />
 		<center><img style="background:url(img/3697567056_45ae16f677_o.gif);" src="img/aapencildance.gif" /><br /><img src="img/huh.gif" width="24px"/><span style="font-size:24px;font-weight:bold;color:red;">WHAT IS QUALITY ENTERTAINMENT?</span><img src="img/huh.gif" width="24px"/>
-		<p style="color:yellow;">Quality Entertainment is a Revolutionary new Content Broadcasting Network. HERE! I'LL SHOW YOU!</p><br />
-		<a href="https://www.youtube.com/channel/UCINIqlVG5ZAfrXMLhxOMxWA"><img src="img/QEYT.png" width="320" height="240" /></a>
-		<span style="font-family:Comic Sans MS, cursive, serif;color:#000;font-weight:bolder;">web design is my passion</span></center>
+		<p>Quality Entertainment is a Revolutionary new Content Broadcasting Network. HERE! I'LL SHOW YOU!</p><br />
+		<a href="https://www.youtube.com/channel/UCINIqlVG5ZAfrXMLhxOMxWA"><img src="img/QEYT.png" width="740" height="530" /></a><br />
+		<h3>Click on the picture to go to the Web-Page :-)</h3>
+		<p>We are committed to providing entertaining content to the masses every single day.</p></center>
+		<i><h2 id="2">Our affiliates</h2></i>
+		<center><p>We've worked with many people over our time on this beloved planet - here are our current affiliates.</p>
+		<img src="img/NaikNaik.png" />
+		
+		
+		
+		
+		<br /><span style="font-family:Comic Sans MS, cursive, serif;color:#000;font-weight:bolder;">web design is my passion</span></center>
+		<script src="css/jquery.min.js"></script>
+		<script src="css/clippy.min.js"></script>
+		<script type="text/javascript">
+			clippy.load('Rover', function(agent) {
+			// Do anything with the loaded agent
+			agent.show();
+			});
+		</script>
 	</div></body>
 </html>
